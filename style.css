@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+html {
+    font-family: 'Be Vietnam', sans-serif;
+    /* 400, 600, 700 */
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 125%;
+    color: hsl(228, 39%, 23%);
+}
+
+h2 {
+    font-size: 2rem;
+    color: hsl(228, 39%, 23%);
+    ;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 11%;
+    justify-content: center;
+    align-content: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    margin: 0;
+    /*test*/
+}
+
+.header-content {
+    width: 100%;
+    text-align: center;
+    padding: 2% 0;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 125%;
+    color: hsl(228, 39%, 23%);
+    margin: 2% 0;
+}
+
+.header-content p {
+    color: hsl(227, 12%, 61%);
+    line-height: 175%;
+    /* Right now */
+    margin: 2% 0;
+}
+
+.header-content img {
+    width: 100%;
+    height: auto;
+    /* Right now */
+}
+
+.orange-padding {
+    background-color: hsl(12, 88%, 59%);
+    padding: 1rem 2rem;
+    font-weight: 600;
+    border-radius: 2rem;
+}
+
+.get-started {
+    color: hsl(0, 0%, 98%);
+    font-size: 0.8rem;
+}
+
+.bullet-points .sub-header,
+.bullet-points .content {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 5rem auto;
+}
+
+.bullet-points .sub-header {
+    box-shadow: inset -90vw 0px 0px 0rem hsl(13, 100%, 96%);
+    /* TODO: Check for better solution on box shadow*/
+}
+
+#menu {
+    position: static;
+    flex-direction: row;
+    box-sizing: border-box;
+    top: 10%;
+    left: 5%;
+    list-style: none;
+    align-items: center;
+    background-color: white;
+    border: 1px solid black;
+    /* Temp */
+    padding: 0%;
+}
+
+#mobile-menu-button {
+    display: none;
+    height: 1rem;
+}
+
+#get-started-nav {
+    display: block;
+}
+
+#logo {
+    height: 1rem;
+    position: relative;
+    top: 0.3rem;
+}
+
+.placeholder-desktop {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .placeholder-desktop {
+        display: none;
+    }
+    #menu {
+        position: absolute;
+        flex-direction: column;
+        width: 90%;
+    }
+    #mobile-menu-button {
+        display: block;
+    }
+    #get-started-nav {
+        display: none;
+    }
+    .bullet-points .content {
+        grid-template-columns: 100%;
+    }
+}
